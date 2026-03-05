@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Passive Soft Base Attaching Gripper - Design models and figures for robotic applications">
+  <meta name="description" content="Passive Soft Base Attaching Gripper - Design and models for robotic applications">
   <meta property="og:title" content="Passive Soft Base Attaching Gripper"/>
-  <meta property="og:description" content="Design models and figures for the passive soft base attaching gripper from LARICS"/>
+  <meta property="og:description" content="Complete design models and figures for the passive soft base attaching gripper"/>
   <meta property="og:url" content="https://jakobdomislovic.github.io/passive_soft_base_attaching_gripper/"/>
   <meta property="og:image" content="static/images/banner.png" />
   <meta property="og:image:width" content="1200"/>
@@ -12,8 +12,9 @@
 
   <meta name="twitter:title" content="Passive Soft Base Attaching Gripper">
   <meta name="twitter:description" content="Design models and figures for the passive soft base attaching gripper">
+  <meta name="twitter:image" content="static/images/banner.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="keywords" content="soft gripper, robotics, gripper design, passive attachment">
+  <meta name="keywords" content="soft gripper, robotics, gripper design, passive attachment, CAD models, STL">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Passive Soft Base Attaching Gripper</title>
@@ -23,43 +24,74 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
 </head>
 <body>
-  <section class="hero" style="background-color: #f58283;">
+  <section class="hero is-fullheight" style="background: linear-gradient(135deg, #f58283 0%, #f5a3a5 100%);">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title" style="color: white;">Passive Soft Base Attaching Gripper</h1>
-            <div class="is-size-5 publication-authors">
-              <span class="author-block" style="color: white;">
+            <h1 class="title is-1 publication-title" style="color: white; font-weight: bold;">Passive Soft Base Attaching Gripper</h1>
+            
+            <div class="is-size-5 publication-authors" style="color: white; margin-top: 1.5rem;">
+              <span class="author-block">
                 <strong>Jakob Domislovic</strong>
               </span>
             </div>
 
-            <div class="is-size-5 publication-authors" style="color: white;">
+            <div class="is-size-5 publication-authors" style="color: rgba(255,255,255,0.95); margin-top: 1rem;">
               <span class="author-block">University of Zagreb, Faculty of Electrical Engineering and Computing</span>
-              <br>
               <span class="author-block">Laboratory for Robotics and Intelligent Control Systems (LARICS)</span>
             </div>
             
-            <div class="column has-text-centered" style="margin-top: 1rem;">
+            <div class="column has-text-centered" style="margin-top: 2rem;">
               <div class="publication-links">
-                <!-- GitHub link -->
+                <!-- Repository link -->
                 <span class="link-block">
                   <a href="https://github.com/JakobDomislovic/passive_soft_base_attaching_gripper" target="_blank"
-                    class="external-link button is-normal is-rounded" style="background-color: white; color: #f58283;">
+                    class="external-link button is-normal is-rounded" style="background-color: white; color: #f58283; border: none; font-weight: bold;">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Repository</span>
+                    <span>GitHub Repository</span>
+                  </a>
+                </span>
+
+                <!-- Models link -->
+                <span class="link-block">
+                  <a href="#models" 
+                    class="external-link button is-normal is-rounded" style="background-color: rgba(255,255,255,0.2); color: white; border: 2px solid white; font-weight: bold;">
+                    <span class="icon">
+                      <i class="fas fa-cube"></i>
+                    </span>
+                    <span>View Models</span>
                   </a>
                 </span>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Figures Section -->
+  <section class="section" style="padding-top: 2px; padding-bottom: 2px; background-color: #fafafa;">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full_width">
+          <hr style="margin-top: 10px; margin-bottom: 20px;">
+          <div class="columns is-centered" style="margin-bottom: 20px;">
+            <!-- Featured image -->
+            <div class="column is-two-thirds" style="padding: 10px;">
+              <figure class="image">
+                <img src="../Figures/Assembly.png" alt="Gripper Assembly" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(245, 130, 131, 0.2);"/>
+              </figure>
             </div>
           </div>
         </div>
@@ -72,15 +104,18 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3" style="color: #f58283;">Overview</h2>
+          <h2 class="title is-3">Overview</h2>
           <div class="content has-text-justified">
-            <p>This repository contains the complete design models and figures for the passive soft base attaching gripper. All necessary files are provided to replicate the design and ensure reproducibility. The gripper is designed for robotic applications where passive attachment mechanisms are beneficial.</p>
+            <p>This repository contains the complete design models and figures for the passive soft base attaching gripper. All necessary files are provided to enable researchers and engineers to replicate the design and ensure reproducibility of results.</p>
+            
             <p>The repository includes:</p>
-            <ul>
-              <li><strong>Fusion 360 Files</strong> - Parametric models for design modification and adaptation</li>
-              <li><strong>STL Files</strong> - Ready-to-print 3D models for prototyping and fabrication</li>
-              <li><strong>Technical Figures</strong> - Detailed diagrams, views, and schematics</li>
+            <ul style="text-align: left;">
+              <li><strong>Fusion 360 Files</strong> (.f3d, .f3z) - Parametric models for design modification and adaptation</li>
+              <li><strong>STL Files</strong> (.stl) - Ready-to-print 3D models for prototyping, fabrication, and simulation</li>
+              <li><strong>Technical Figures</strong> - Detailed views, diagrams, and schematics from multiple perspectives</li>
             </ul>
+
+            <p>The gripper is designed for robotic applications where passive attachment mechanisms are beneficial, providing a robust solution for grasping and manipulation tasks.</p>
           </div>
         </div>
       </div>
@@ -88,24 +123,45 @@
   </section>
 
   <!-- Models Section -->
-  <section class="section">
+  <section class="section" id="models">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-full_width">
-          <h2 class="title is-3" style="color: #f58283;">Models & Files</h2>
+          <h2 class="title is-3">Models & Files</h2>
+          <hr style="background-color: #f58283; height: 3px; margin: 1rem 0;">
+          
           <div class="columns is-centered" style="margin-top: 2rem;">
-            <div class="column is-half">
-              <div class="box" style="border-left: 4px solid #f58283;">
-                <h3 class="title is-5">📋 Fusion 360 Files</h3>
-                <p class="content">Parametric design files for modification and customization using Autodesk Fusion 360.</p>
-                <p><a href="../Models/Fusion/" style="color: #f58283; font-weight: bold;">Download Fusion Files →</a></p>
+            <!-- Fusion Files -->
+            <div class="column is-half" style="padding: 15px;">
+              <div class="box model-box" style="border-top: 5px solid #f58283; box-shadow: 0 4px 12px rgba(245, 130, 131, 0.15);">
+                <p class="heading" style="color: #f58283; font-weight: bold;">📋 FUSION 360 FILES</p>
+                <h3 class="title is-5" style="margin-top: 0.5rem;">Parametric Design Models</h3>
+                <p class="content">Complete parametric models in Autodesk Fusion 360 format. These files allow for modification, adaptation, and detailed inspection of the design.</p>
+                <div style="margin-top: 1.5rem;">
+                  <a href="../Models/Fusion/" class="button is-fullwidth" style="background-color: #f58283; color: white; border: none; font-weight: bold;">
+                    <span class="icon">
+                      <i class="fas fa-download"></i>
+                    </span>
+                    <span>Download Fusion Files</span>
+                  </a>
+                </div>
               </div>
             </div>
-            <div class="column is-half">
-              <div class="box" style="border-left: 4px solid #f58283;">
-                <h3 class="title is-5">🖨️ STL Files</h3>
-                <p class="content">Ready-to-print stereolithography files for 3D printing and visualization without requiring Fusion 360.</p>
-                <p><a href="../Models/STL/" style="color: #f58283; font-weight: bold;">Download STL Files →</a></p>
+
+            <!-- STL Files -->
+            <div class="column is-half" style="padding: 15px;">
+              <div class="box model-box" style="border-top: 5px solid #f58283; box-shadow: 0 4px 12px rgba(245, 130, 131, 0.15);">
+                <p class="heading" style="color: #f58283; font-weight: bold;">🖨️ STL FILES</p>
+                <h3 class="title is-5" style="margin-top: 0.5rem;">3D Print Ready Models</h3>
+                <p class="content">Stereolithography files optimized for 3D printing and simulation. No Fusion 360 required. Ready for immediate fabrication.</p>
+                <div style="margin-top: 1.5rem;">
+                  <a href="../Models/STL/" class="button is-fullwidth" style="background-color: #f58283; color: white; border: none; font-weight: bold;">
+                    <span class="icon">
+                      <i class="fas fa-download"></i>
+                    </span>
+                    <span>Download STL Files</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -114,16 +170,59 @@
     </div>
   </section>
 
-  <!-- Figures Section -->
+  <!-- Gallery Section -->
   <section class="section hero is-light">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-full_width">
-          <h2 class="title is-3" style="color: #f58283; text-align: center;">Key Views</h2>
-          <div class="columns is-centered" style="margin-top: 2rem;">
-            <div class="column is-full">
-              <p>Multiple perspectives of the gripper assembly:</p>
-              <p style="margin-top: 1rem;"><a href="../Figures/" style="color: #f58283; font-weight: bold;">View all figures →</a></p>
+          <h2 class="title is-3">Multi-View Gallery</h2>
+          <hr style="background-color: #f58283; height: 3px; margin: 1rem 0;">
+          
+          <div class="columns is-centered" style="margin-top: 2rem; gap: 20px;">
+            <!-- Top View -->
+            <div class="column is-one-third">
+              <div class="box gallery-item" style="padding: 0; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                <figure class="image is-4by3">
+                  <img src="../Figures/Top view.png" alt="Top View" style="object-fit: cover; width: 100%; height: 100%;"/>
+                </figure>
+                <div style="padding: 1rem; background-color: white;">
+                  <p class="heading" style="color: #f58283; font-size: 0.85rem;">TOP VIEW</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Side View -->
+            <div class="column is-one-third">
+              <div class="box gallery-item" style="padding: 0; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                <figure class="image is-4by3">
+                  <img src="../Figures/Side view.png" alt="Side View" style="object-fit: cover; width: 100%; height: 100%;"/>
+                </figure>
+                <div style="padding: 1rem; background-color: white;">
+                  <p class="heading" style="color: #f58283; font-size: 0.85rem;">SIDE VIEW</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom View -->
+            <div class="column is-one-third">
+              <div class="box gallery-item" style="padding: 0; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                <figure class="image is-4by3">
+                  <img src="../Figures/Bottom view.png" alt="Bottom View" style="object-fit: cover; width: 100%; height: 100%;"/>
+                </figure>
+                <div style="padding: 1rem; background-color: white;">
+                  <p class="heading" style="color: #f58283; font-size: 0.85rem;">BOTTOM VIEW</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Additional Views -->
+          <div class="columns is-centered" style="margin-top: 1rem; gap: 20px;">
+            <div class="column is-half">
+              <p><a href="../Figures/Exploded.png" target="_blank" style="color: #f58283; font-weight: bold;">→ Exploded View</a></p>
+            </div>
+            <div class="column is-half">
+              <p><a href="../Figures/Top view without UR10 mount.png" target="_blank" style="color: #f58283; font-weight: bold;">→ Top View (Alternative)</a></p>
             </div>
           </div>
         </div>
@@ -136,28 +235,12 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-full_width">
-          <h2 class="title is-3" style="color: #f58283;">Citation</h2>
-          <div class="content has-text-left">
-            <p>If you use this work in your research, please cite it as:</p>
-            <pre><code>[Author(s). "Title of the Article." Journal Name, vol. XX, no. YY, pp. ZZ, Year.]</code></pre>
-            <p style="margin-top: 1rem; font-style: italic;">Citation details will be updated upon article publication.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section class="section hero is-light">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3" style="color: #f58283;">Contact</h2>
-          <div class="content has-text-justified">
-            <p>For questions, suggestions, or collaborations, please contact:</p>
-            <p><strong>Jakob Domislovic</strong></p>
-            <p>Email: <a href="mailto:jakob.domislovic@fer.unizg.hr" style="color: #f58283;">jakob.domislovic@fer.unizg.hr</a></p>
-            <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.7;">Laboratory for Robotics and Intelligent Control Systems (LARICS)<br>University of Zagreb, Faculty of Electrical Engineering and Computing</p>
+          <h2 class="title is-3">Citation</h2>
+          <hr style="background-color: #f58283; height: 3px; margin: 1rem 0;">
+          <div class="content has-text-left" style="background-color: #f5f5f5; padding: 1.5rem; border-left: 4px solid #f58283; margin-top: 1.5rem;">
+            <p style="font-weight: bold; margin-bottom: 1rem;">If you use this work in your research, please cite it as:</p>
+            <pre style="background-color: white; padding: 1rem; border-radius: 4px;"><code>[Author(s). "Title of the Article." Journal Name, vol. XX, no. YY, pp. ZZ, Year.]</code></pre>
+            <p style="margin-top: 1rem; font-style: italic; color: #666; font-size: 0.95rem;">Citation details will be updated upon article publication.</p>
           </div>
         </div>
       </div>
@@ -165,13 +248,35 @@
   </section>
 
   <!-- Acknowledgment Section -->
-  <section class="section">
+  <section class="section hero is-light">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-full_width">
-          <h2 class="title is-3" style="color: #f58283;">Acknowledgment</h2>
-          <div class="content has-text-justified">
-            <p>This work was supported in part by the project "CBRNe HERO" funded by the European Union - NextGeneration EU under Grant NPOO.C3.2.R3-I1.04.0075. The work of doctoral student Jakob Domislovic has been supported in part by the "Young researchers' career development project–training of doctoral students" of the Croatian Science Foundation funded by the European Union from the European Social Fund.</p>
+          <h2 class="title is-3">Acknowledgment</h2>
+          <hr style="background-color: #f58283; height: 3px; margin: 1rem 0;">
+          <div class="content has-text-justified" style="margin-top: 1.5rem;">
+            <p>This work was supported in part by the project <strong>"CBRNe HERO"</strong> funded by the European Union - NextGeneration EU under Grant <strong>NPOO.C3.2.R3-I1.04.0075</strong>.</p>
+            <p style="margin-top: 1rem;">The work of doctoral student <strong>Jakob Domislovic</strong> has been supported in part by the <strong>"Young researchers' career development project–training of doctoral students"</strong> of the Croatian Science Foundation funded by the European Union from the European Social Fund.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Contact</h2>
+          <hr style="background-color: #f58283; height: 3px; margin: 1rem 0;">
+          <div class="content has-text-justified" style="margin-top: 1.5rem;">
+            <p style="margin-bottom: 1rem;">For questions, suggestions, or collaborations regarding this work, please contact:</p>
+            <p><strong style="font-size: 1.1rem;">Jakob Domislovic</strong><br>
+            <a href="mailto:jakob.domislovic@fer.unizg.hr" style="color: #f58283; font-weight: bold; text-decoration: none;">jakob.domislovic@fer.unizg.hr</a></p>
+            <p style="margin-top: 1.5rem; font-size: 0.95rem; color: #666;">Laboratory for Robotics and Intelligent Control Systems (LARICS)<br>
+            University of Zagreb, Faculty of Electrical Engineering and Computing<br>
+            Unska 3, 10000 Zagreb, Croatia</p>
           </div>
         </div>
       </div>
@@ -179,20 +284,24 @@
   </section>
 
   <!-- Footer -->
-  <footer class="footer" style="background-color: #f58283;">
+  <footer class="footer" style="background: linear-gradient(135deg, #f58283 0%, #f5a3a5 100%); padding: 3rem 1.5rem;">
     <div class="container">
       <div class="columns is-centered">
         <div class="column is-8">
           <div class="content has-text-centered" style="color: white;">
-            <p>
-              <strong>Passive Soft Base Attaching Gripper</strong> © 2026 Jakob Domislovic<br>
+            <p style="margin-bottom: 1rem;">
+              <strong>Passive Soft Base Attaching Gripper</strong><br>
+              © 2026 Jakob Domislovic | University of Zagreb
+            </p>
+            <p style="font-size: 0.9rem; opacity: 0.9;">
               Laboratory for Robotics and Intelligent Control Systems (LARICS)<br>
-              University of Zagreb, Faculty of Electrical Engineering and Computing
+              <a href="https://github.com/JakobDomislovic/passive_soft_base_attaching_gripper" target="_blank" style="color: white; text-decoration: underline;">GitHub Repository</a>
             </p>
           </div>
         </div>
       </div>
     </div>
   </footer>
+
 </body>
 </html>
