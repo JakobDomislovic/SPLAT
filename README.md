@@ -45,7 +45,7 @@ If you use this work in your research, please cite:
 
 ## License
 
-This work is licensed under the [MIT License](LICENSE) / [CC BY 4.0](LICENSE) / [Specify appropriate license for scientific work].
+This work is licensed under the [MIT License](LICENSE).
 
 ## Acknowledgment
 

@@ -1,0 +1,4 @@
+Time,header.seq,header.stamp.secs,header.stamp.nsecs,header.frame_id,level,name,msg,file,function,line,topics
+1772794803.492944,3,1772794803,490557462,,2,/record_1772794803474403576,Subscribing to /optoforce_node/OptoForceWrench_filtered2,/tmp/binarydeb/ros-noetic-rosbag-1.16.0/src/recorder.cpp,shared_ptr<ros::Subscriber> rosbag::Recorder::subscribe,256,['/rosout']
+1772794803.4929612,4,1772794803,491323228,,2,/record_1772794803474403576,Subscribing to /optoforce_node/OptoForceWrench_raw,/tmp/binarydeb/ros-noetic-rosbag-1.16.0/src/recorder.cpp,shared_ptr<ros::Subscriber> rosbag::Recorder::subscribe,256,['/rosout']
+1772794803.4929676,5,1772794803,492195595,,2,/record_1772794803474403576,Subscribing to /optoforce_node/OptoForceWrench,/tmp/binarydeb/ros-noetic-rosbag-1.16.0/src/recorder.cpp,shared_ptr<ros::Subscriber> rosbag::Recorder::subscribe,256,['/rosout']
