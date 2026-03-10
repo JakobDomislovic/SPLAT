@@ -4,7 +4,7 @@ This repository contains the design models and figures for the SPLAT gripper, su
 
 ## Overview
 
-The SPLAT gripper is designed for [brief description of the gripper's purpose, e.g., robotic manipulation in unstructured environments]. This repository provides all necessary models to replicate the design, ensuring reproducibility and accessibility.
+The SPLAT gripper is designed for [brief description of the gripper's purpose, e.g., robotic manipulation in unstructured environments]. This repository provides all necessary models to replicate the design, ensuring reproducibility and accessibility. 
 
 ## Visual Overview
 
