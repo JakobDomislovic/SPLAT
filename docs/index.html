@@ -2,87 +2,85 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="SPLAT: Soft Peelable Lifting-Lip Adhesion Tool for Aerial Perching - Design and models for robotic applications">
+  <meta name="description" content="SPLAT: Soft Peelable Lifting-Lip Adhesion Tool for Aerial Perching - passive soft-base suction gripper for repeatable attachment to smooth surfaces.">
   <meta property="og:title" content="SPLAT: Soft Peelable Lifting-Lip Adhesion Tool for Aerial Perching"/>
-  <meta property="og:description" content="Complete design models and figures for the SOBER gripper"/>
-  <meta property="og:url" content="https://jakobdomislovic.github.io/SOBER_A_Soft_Base_Passive_Gripper_for_Surface_Attachment/"/>
-  <meta property="og:image" content="static/images/banner.png" />
+  <meta property="og:description" content="A passive soft-base suction gripper for repeatable attachment to smooth and semi-smooth surfaces in robotic manipulation and aerial perching."/>
+  <meta property="og:url" content="https://jakobdomislovic.github.io/SPLAT/"/>
+  <meta property="og:image" content="./Media/Figures/perch_and_release.png"/>
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
   <meta name="twitter:title" content="SPLAT: Soft Peelable Lifting-Lip Adhesion Tool for Aerial Perching">
-  <meta name="twitter:description" content="Design models and figures for the SOBER gripper">
-  <meta name="twitter:image" content="static/images/banner.png">
+  <meta name="twitter:description" content="A passive soft-base suction gripper for repeatable attachment to smooth and semi-smooth surfaces in robotic manipulation and aerial perching.">
+  <meta name="twitter:image" content="./Media/Figures/perch_and_release.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="keywords" content="soft gripper, robotics, gripper design, passive attachment, CAD models, STL">
+  <meta name="keywords" content="soft gripper, aerial perching, suction cup, passive gripper, soft robotics, UAV perching, compliant mechanism">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>SPLAT: Soft Peelable Lifting-Lip Adhesion Tool for Aerial Perching</title>
-  <link rel="icon" type="image/x-icon" href="static/images/icon.ico">
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
-
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" href="style.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
 </head>
 <body>
+
+  <!-- Hero -->
   <section class="hero" style="background: linear-gradient(135deg, #F5821F 0%, #F5A860 100%); min-height: 30vh;">
     <div class="hero-body" style="padding: 3rem 1.5rem;">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title" style="color: white; font-weight: bold; font-size: 2.5rem;">SPLAT: Soft Peelable Lifting-Lip Adhesion Tool for Aerial Perching</h1>
-            
+            <h1 class="title is-1 publication-title" style="color: white; font-weight: bold; font-size: 2.5rem;">
+              SPLAT: Soft Peelable Lifting-Lip Adhesion Tool for Aerial Perching
+            </h1>
+
             <div class="is-size-5 publication-authors" style="color: white; margin-top: 1.5rem;">
               <span class="author-block">
                 <strong>Jakob Domislovic, Matko Orsag</strong>
               </span>
             </div>
 
-            <div class="is-size-5 publication-authors" style="color: rgba(255,255,255,0.95); margin-top: 1rem;">
+            <div class="is-size-5 publication-authors" style="color: rgba(255,255,255,0.95); margin-top: 0.75rem;">
               <span class="author-block">University of Zagreb Faculty of Electrical Engineering and Computing</span>
             </div>
-            <div class="is-size-5 publication-authors" style="color: rgba(255,255,255,0.95); margin-top: 0.5rem;">
+            <div class="is-size-5 publication-authors" style="color: rgba(255,255,255,0.95); margin-top: 0.25rem;">
               <span class="author-block">Laboratory for Robotics and Intelligent Control Systems (LARICS)</span>
             </div>
-            
-            <div class="column has-text-centered" style="margin-top: 2rem;">
+
+            <div style="margin-top: 1.25rem; font-size: 0.95rem; color: rgba(255,255,255,0.8);">
+              IEEE Advanced Intelligent Mechatronics (AIM) 2026
+            </div>
+
+            <div class="column has-text-centered" style="margin-top: 1.75rem;">
               <div class="publication-links">
-                <!-- Paper link -->
                 <span class="link-block">
                   <a href="#" onclick="alert('Paper link will be active after acceptance of the manuscript.'); return false;"
-                    class="external-link button is-normal is-rounded" style="background-color: rgba(255,255,255,0.7); color: #F5821F; border: 2px solid white; font-weight: bold; cursor: pointer;">
-                    <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                    </span>
+                    class="external-link button is-normal is-rounded"
+                    style="background-color: rgba(255,255,255,0.7); color: #F5821F; border: 2px solid white; font-weight: bold;">
+                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
                     <span>Paper</span>
                   </a>
                 </span>
-
-                <!-- Repository link -->
                 <span class="link-block">
                   <a href="https://github.com/JakobDomislovic/SPLAT" target="_blank"
-                    class="external-link button is-normal is-rounded" style="background-color: white; color: #F5821F; border: none; font-weight: bold;">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>GitHub Repository</span>
+                    class="external-link button is-normal is-rounded"
+                    style="background-color: white; color: #F5821F; border: none; font-weight: bold;">
+                    <span class="icon"><i class="fab fa-github"></i></span>
+                    <span>GitHub</span>
                   </a>
                 </span>
-
-                <!-- Models link -->
                 <span class="link-block">
-                  <a href="#models" 
-                    class="external-link button is-normal is-rounded" style="background-color: rgba(255,255,255,0.2); color: white; border: 2px solid white; font-weight: bold;">
-                    <span class="icon">
-                      <i class="fas fa-cube"></i>
-                    </span>
-                    <span>View Models</span>
+                  <a href="#models"
+                    class="external-link button is-normal is-rounded"
+                    style="background-color: rgba(255,255,255,0.2); color: white; border: 2px solid white; font-weight: bold;">
+                    <span class="icon"><i class="fas fa-cube"></i></span>
+                    <span>Models</span>
                   </a>
                 </span>
               </div>
@@ -93,18 +91,60 @@
     </div>
   </section>
 
-  <!-- Key Figures Section -->
-  <section class="section" style="padding-top: 2px; padding-bottom: 2px; background-color: #fafafa;">
+  <!-- Teaser Figure -->
+  <section class="section" style="padding: 2rem 1.5rem; background-color: #fafafa;">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-four-fifths has-text-centered">
+          <figure class="image">
+            <img src="./Media/Figures/perch_and_release.png" alt="UAV perching, release, and takeoff cycle"
+              style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.12);"/>
+          </figure>
+          <p style="margin-top: 0.75rem; font-size: 0.9rem; color: #666; font-style: italic;">
+            Timelapse of the UAV perching, release, and takeoff cycle under approach misalignment.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Abstract -->
+  <section class="section hero is-light">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
-        <div class="column is-full_width">
-          <hr style="margin-top: 10px; margin-bottom: 20px;">
-          <div class="columns is-centered" style="margin-bottom: 20px;">
-            <!-- Featured image -->
-            <div class="column is-two-thirds" style="padding: 10px;">
-              <figure class="image">
-                <img src="./Media/Figures/Assembly.png" alt="Gripper Assembly" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(245, 130, 31, 0.2);"/>
-              </figure>
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified" style="margin-top: 1.5rem; font-size: 1.05rem; line-height: 1.7;">
+            <p>
+              We present SPLAT, a passive soft-base suction gripper for repeatable attachment to smooth and semi-smooth surfaces in robotic manipulation and aerial perching. The gripper combines a compliant silicone base, passive suction cups, and a host-actuated tether release mechanism to achieve a lightweight, simple, and broadly deployable design without dedicated end-effector actuators or valves. Structural compliance improves tolerance to contact uncertainty and misalignment, while relative rotation of the base enables repeatable passive release. A reduced-order analytical model is developed to relate torsional compliance, release torque, and suction-based load capacity to key design parameters. The system is validated experimentally through torsional identification, load-capacity tests on multiple surfaces and inclinations, misalignment analysis, and demonstrations with a UAV and a robotic manipulator. Reliable UAV perching at approach misalignments of about 20° demonstrates the robustness of the proposed design under realistic contact conditions.
+            </p>
+            <p style="margin-top: 1rem; color: #888; font-size: 0.9rem;">
+              <strong>Keywords:</strong> soft robotics, passive gripper, attaching, aerial perching
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Contributions -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Contributions</h2>
+          <div style="margin-top: 1.5rem; text-align: left;">
+            <div style="display: flex; align-items: flex-start; margin-bottom: 1.25rem;">
+              <span style="color: #F5821F; font-size: 1.5rem; margin-right: 1rem; margin-top: 0.1rem;"><i class="fas fa-hand-paper"></i></span>
+              <p><strong>Passive soft-base suction gripper</strong> — SPLAT attaches and detaches reliably without dedicated end-effector actuators or valves, making it a simple plug-and-play mechanism for different robotic platforms.</p>
+            </div>
+            <div style="display: flex; align-items: flex-start; margin-bottom: 1.25rem;">
+              <span style="color: #F5821F; font-size: 1.5rem; margin-right: 1rem; margin-top: 0.1rem;"><i class="fas fa-random"></i></span>
+              <p><strong>Misalignment-tolerant compliant design</strong> — The Ecoflex silicone base provides multidirectional elastic deformation, enabling reliable suction cup sealing even under moderate angular and positional contact errors without active sensing or control.</p>
+            </div>
+            <div style="display: flex; align-items: flex-start; margin-bottom: 1.25rem;">
+              <span style="color: #F5821F; font-size: 1.5rem; margin-right: 1rem; margin-top: 0.1rem;"><i class="fas fa-flask"></i></span>
+              <p><strong>Comprehensive experimental validation</strong> — Results include torsional identification, load-capacity tests on multiple surfaces and inclinations, misalignment analysis, and live demonstrations with a UAV and a robotic manipulator.</p>
             </div>
           </div>
         </div>
@@ -112,66 +152,126 @@
     </div>
   </section>
 
-  <!-- Overview Section -->
+  <!-- Design -->
   <section class="section hero is-light">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">Overview</h2>
-          <div class="content has-text-justified">
-            <p>This repository contains the complete design models and figures for the SOBER gripper. All necessary files are provided to enable researchers and engineers to replicate the design and ensure reproducibility of results.</p>
-            
-            <p>The repository includes:</p>
-            <ul style="text-align: left;">
-              <li><strong>Fusion 360 Files</strong> (.f3d, .f3z) - Parametric models for design modification and adaptation</li>
-              <li><strong>STL Files</strong> (.stl) - Ready-to-print 3D models for prototyping, fabrication, and simulation</li>
-              <li><strong>Technical Figures</strong> - Detailed views, diagrams, and schematics from multiple perspectives</li>
-            </ul>
-
-            <p>The gripper is designed for robotic applications where passive attachment mechanisms are beneficial, providing a robust solution for grasping and manipulation tasks.</p>
+          <h2 class="title is-3">Design</h2>
+          <div class="content has-text-justified" style="margin-top: 1.5rem;">
+            <p>
+              SPLAT consists of a compliant cylindrical soft base (Ecoflex 00-30 silicone, &#x2300;45&thinsp;mm &times; 50&thinsp;mm), an X-shaped rigid PET-G arm structure carrying four custom-molded suction cups (&#x2300;42&thinsp;mm, Extrasil RTV-2), and a 0.35&thinsp;mm tether routed through printed channels. The total gripper height is 95&thinsp;mm. Both the base and suction cups are cast from 3D-printed molds; the complete fabrication requires approximately 6&thinsp;hours.
+            </p>
+            <p>
+              <strong>Attachment</strong> is passive: surface contact compresses the suction cups, expelling air and creating a vacuum seal. The compliant base damps impact and tolerates approach misalignment.
+              <strong>Release</strong> is driven by a yaw rotation of the host robot, which tensions the tether, peels the suction cup lip, and breaks the seal — no active valves required.
+            </p>
           </div>
+          <div class="columns is-centered" style="margin-top: 2rem;">
+            <div class="column is-two-thirds">
+              <figure class="image">
+                <img src="./Media/Figures/Exploded_labeled.png" alt="Exploded labeled view of SPLAT"
+                  style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"/>
+              </figure>
+              <p style="margin-top: 0.6rem; font-size: 0.9rem; color: #666; font-style: italic;">Exploded view with labeled components.</p>
+            </div>
+          </div>
+
+          <div class="columns is-centered" style="margin-top: 2rem; gap: 16px;">
+            <div class="column is-one-third">
+              <figure class="image">
+                <img src="./Media/Figures/Mode1_labeled.png" alt="Attachment mode"
+                  style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"/>
+              </figure>
+              <p style="margin-top: 0.5rem; font-size: 0.85rem; color: #666; font-style: italic;">Attachment</p>
+            </div>
+            <div class="column is-one-third">
+              <figure class="image">
+                <img src="./Media/Figures/Mode2_labeled.png" alt="Release mode"
+                  style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"/>
+              </figure>
+              <p style="margin-top: 0.5rem; font-size: 0.85rem; color: #666; font-style: italic;">Release (yaw-driven peeling)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demo Video -->
+  <section class="section" id="demo">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full">
+          <h2 class="title is-3">Demo</h2>
+
+          <div class="columns is-centered" style="margin-top: 2rem;">
+            <div class="column is-four-fifths">
+              <div class="box" style="padding: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                <p class="heading" style="color: #F5821F; font-weight: bold; margin-bottom: 0.75rem;">
+                  LAB RESPONSE — ATTACH &amp; RELEASE CYCLE
+                </p>
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
+                  <source src="./Media/Videos/aim26_lab_reponse.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+
+          <div class="columns is-centered" style="margin-top: 1rem;">
+            <div class="column is-four-fifths">
+              <div class="box" style="padding: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                <p class="heading" style="color: #F5821F; font-weight: bold; margin-bottom: 0.75rem;">
+                  UAV PERCHING
+                </p>
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
+                  <source src="./Media/Visualization/figures_uav_perching/laboratory_attach_and_release.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
   </section>
 
   <!-- Models Section -->
-  <section class="section" id="models">
+  <section class="section hero is-light" id="models">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-full_width">
-          <h2 class="title is-3">Models & Files</h2>
-          <hr style="background-color: #F5821F; height: 3px; margin: 1rem 0;">
-          
+          <h2 class="title is-3">Models &amp; Files</h2>
+
           <div class="columns is-centered" style="margin-top: 2rem;">
-            <!-- Fusion Files -->
             <div class="column is-half" style="padding: 15px;">
               <div class="box model-box" style="border-top: 5px solid #F5821F; box-shadow: 0 4px 12px rgba(245, 130, 31, 0.15);">
-                <p class="heading" style="color: #F5821F; font-weight: bold;">📋 FUSION 360 FILES</p>
+                <p class="heading" style="color: #F5821F; font-weight: bold;">FUSION 360 FILES</p>
                 <h3 class="title is-5" style="margin-top: 0.5rem;">Parametric Design Models</h3>
-                <p class="content">Complete parametric models in Autodesk Fusion 360 format. These files allow for modification, adaptation, and detailed inspection of the design.</p>
+                <p class="content">Complete parametric models in Autodesk Fusion 360 format. Allows modification, adaptation, and detailed inspection of the design.</p>
                 <div style="margin-top: 1.5rem;">
-                  <a href="https://github.com/JakobDomislovic/SPLAT/tree/main/Models/Fusion" class="button is-fullwidth" style="background-color: #F5821F; color: white; border: none; font-weight: bold;">
-                    <span class="icon">
-                      <i class="fas fa-download"></i>
-                    </span>
+                  <a href="https://github.com/JakobDomislovic/SPLAT/tree/master/Models/Fusion"
+                    class="button is-fullwidth" target="_blank"
+                    style="background-color: #F5821F; color: white; border: none; font-weight: bold;">
+                    <span class="icon"><i class="fas fa-download"></i></span>
                     <span>Download Fusion Files</span>
                   </a>
                 </div>
               </div>
             </div>
 
-            <!-- STL Files -->
             <div class="column is-half" style="padding: 15px;">
               <div class="box model-box" style="border-top: 5px solid #F5821F; box-shadow: 0 4px 12px rgba(245, 130, 31, 0.15);">
-                <p class="heading" style="color: #F5821F; font-weight: bold;">🖨️ STL FILES</p>
+                <p class="heading" style="color: #F5821F; font-weight: bold;">STL FILES</p>
                 <h3 class="title is-5" style="margin-top: 0.5rem;">3D Print Ready Models</h3>
-                <p class="content">Stereolithography files optimized for 3D printing and simulation. No Fusion 360 required. Ready for immediate fabrication.</p>
+                <p class="content">STL files for all 3D-printed parts: arms, molds, mounting plates, and suction cup molds. No Fusion 360 required.</p>
                 <div style="margin-top: 1.5rem;">
-                  <a href="https://github.com/JakobDomislovic/SPLAT/tree/main/Models/STL" class="button is-fullwidth" style="background-color: #F5821F; color: white; border: none; font-weight: bold;">
-                    <span class="icon">
-                      <i class="fas fa-download"></i>
-                    </span>
+                  <a href="https://github.com/JakobDomislovic/SPLAT/tree/master/Models/STL"
+                    class="button is-fullwidth" target="_blank"
+                    style="background-color: #F5821F; color: white; border: none; font-weight: bold;">
+                    <span class="icon"><i class="fas fa-download"></i></span>
                     <span>Download STL Files</span>
                   </a>
                 </div>
@@ -183,148 +283,22 @@
     </div>
   </section>
 
-  <!-- Gallery Section -->
-  <section class="section hero is-light">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-full_width">
-          <h2 class="title is-3">Multi-view gallery</h2>
-          <hr style="background-color: #F5821F; height: 3px; margin: 1rem 0;">
-  
-          <div class="columns is-centered" style="margin-top: 2rem; gap: 20px;">
-            <!-- Exploded View -->
-            <div class="column is-one-third">
-              <div class="box gallery-item" style="padding: 0; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-                <figure class="image is-4by3">
-                  <img src="./Media/Figures/Exploded.png" alt="Exploded View"
-                    style="object-fit: cover; width: 100%; height: 100%;" />
-                </figure>
-                <div style="padding: 1rem; background-color: white;">
-                  <p class="heading" style="color: #F5821F; font-size: 0.85rem;">EXPLODED VIEW</p>
-                </div>
-              </div>
-            </div>
-  
-            <!-- Side View -->
-            <div class="column is-one-third">
-              <div class="box gallery-item" style="padding: 0; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-                <figure class="image is-4by3">
-                  <img src="./Media/Figures/Side view.png" alt="Side View"
-                    style="object-fit: cover; width: 100%; height: 100%;" />
-                </figure>
-                <div style="padding: 1rem; background-color: white;">
-                  <p class="heading" style="color: #F5821F; font-size: 0.85rem;">SIDE VIEW</p>
-                </div>
-              </div>
-            </div>
-  
-            <!-- Bottom View -->
-            <div class="column is-one-third">
-              <div class="box gallery-item" style="padding: 0; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-                <figure class="image is-4by3">
-                  <img src="./Media/Figures/Bottom view.png" alt="Bottom View"
-                    style="object-fit: cover; width: 100%; height: 100%;" />
-                </figure>
-                <div style="padding: 1rem; background-color: white;">
-                  <p class="heading" style="color: #F5821F; font-size: 0.85rem;">BOTTOM VIEW</p>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <!-- Additional Views -->
-          <div class="columns is-centered" style="margin-top: 1rem; gap: 20px;">
-            <div class="column is-half">
-              <p><a href="./Media/Figures/Exploded.png" target="_blank" style="color: #F5821F; font-weight: bold;">→
-                  Exploded view</a></p>
-            </div>
-            <div class="column is-half">
-              <p><a href="./Media/Figures/Top view without UR10 mount.png" target="_blank"
-                  style="color: #F5821F; font-weight: bold;">→ Top view without UR10e mount</a></p>
-            </div>
-          </div>
-  
-          <!-- Alternative top view -->
-          <div class="columns is-centered" style="margin-top: 1.5rem;">
-            <div class="column is-two-thirds">
-              <div class="box gallery-item" style="padding: 0; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-                <figure class="image">
-                  <img src="./Media/Figures/Top view without UR10 mount.png" alt="Top View without UR10e mount"
-                    style="width: 100%; height: auto;" />
-                </figure>
-                <div style="padding: 1rem; background-color: white;">
-                  <p class="heading" style="color: #F5821F; font-size: 0.85rem;">TOP VIEW WITHOUT UR10e MOUNT</p>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Experimental Results Section -->
-  <section class="section" id="experiments">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-full">
-          <h2 class="title is-3">Experimental results</h2>
-          <hr style="background-color: #F5821F; height: 3px; margin: 1rem 0;">
-  
-          <!-- Main video on top -->
-          <div class="columns is-centered" style="margin-top: 2rem;">
-            <div class="column is-four-fifths">
-              <div class="box" style="padding: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-                <p class="heading" style="color: #F5821F; font-weight: bold; margin-bottom: 0.75rem;">LABORATORY RESPONSE
-                </p>
-                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
-                  <source src="./Media/Videos/aim26_lab_reponse.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-            </div>
-          </div>
-  
-          <!-- Two videos side by side -->
-          <div class="columns is-variable is-6" style="margin-top: 1rem;">
-            <div class="column is-half">
-              <div class="box" style="padding: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-                <p class="heading" style="color: #F5821F; font-weight: bold; margin-bottom: 0.75rem;">METAL 15°</p>
-                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
-                  <source src="./Media/Videos/metal_15.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-            </div>
-  
-            <div class="column is-half">
-              <div class="box" style="padding: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-                <p class="heading" style="color: #F5821F; font-weight: bold; margin-bottom: 0.75rem;">PLEXI 15°</p>
-                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
-                  <source src="./Media/Videos/plexi_15.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-            </div>
-          </div>
-  
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Citation Section -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
-        <div class="column is-full_width">
+        <div class="column is-four-fifths">
           <h2 class="title is-3">Citation</h2>
-          <hr style="background-color: #F5821F; height: 3px; margin: 1rem 0;">
           <div class="content has-text-left" style="background-color: #f5f5f5; padding: 1.5rem; border-left: 4px solid #F5821F; margin-top: 1.5rem;">
-            <p style="font-weight: bold; margin-bottom: 1rem;">If you use this work in your research, please cite it as:</p>
-            <pre style="background-color: white; padding: 1rem; border-radius: 4px;"><code>[Author(s). "Title of the Article." Journal Name, vol. XX, no. YY, pp. ZZ, Year.]</code></pre>
-            <p style="margin-top: 1rem; font-style: italic; color: #666; font-size: 0.95rem;">Citation details will be updated upon article publication.</p>
+            <p style="font-weight: bold; margin-bottom: 1rem;">If you use this work, please cite:</p>
+            <pre style="background-color: white; padding: 1rem; border-radius: 4px; overflow-x: auto;"><code>@inproceedings{domislovic2026splat,
+  author    = {Domislovic, Jakob and Orsag, Matko},
+  title     = {SPLAT: Soft Peelable Lifting-Lip Adhesion Tool for Aerial Perching},
+  booktitle = {Proceedings of the IEEE International Conference on
+               Advanced Intelligent Mechatronics (AIM)},
+  year      = {2026}
+}</code></pre>
+            <p style="margin-top: 1rem; font-style: italic; color: #888; font-size: 0.9rem;">Details (DOI, pages) will be updated upon publication.</p>
           </div>
         </div>
       </div>
@@ -335,12 +309,10 @@
   <section class="section hero is-light">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
-        <div class="column is-full_width">
+        <div class="column is-four-fifths">
           <h2 class="title is-3">Acknowledgment</h2>
-          <hr style="background-color: #F5821F; height: 3px; margin: 1rem 0;">
           <div class="content has-text-justified" style="margin-top: 1.5rem;">
-            <p>This work was supported in part by the project <strong>"CBRNe HERO"</strong> funded by the European Union - NextGeneration EU under Grant <strong>NPOO.C3.2.R3-I1.04.0075</strong>.</p>
-            <p style="margin-top: 1rem;">The work of doctoral student <strong>Jakob Domislovic</strong> has been supported in part by the <strong>"Young researchers' career development project–training of doctoral students"</strong> of the Croatian Science Foundation funded by the European Union from the European Social Fund.</p>
+            <p>This work was supported in part by the project <strong>"CBRNe HERO"</strong> funded by the European Union — NextGeneration EU under Grant <strong>NPOO.C3.2.R3-I1.04.0075</strong>. The work of doctoral student <strong>Jakob Domislovic</strong> has been supported in part by the <strong>"Young researchers' career development project — training of doctoral students"</strong> of the Croatian Science Foundation funded by the European Union from the European Social Fund.</p>
           </div>
         </div>
       </div>
@@ -353,14 +325,17 @@
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <h2 class="title is-3">Contact</h2>
-          <hr style="background-color: #F5821F; height: 3px; margin: 1rem 0;">
           <div class="content has-text-justified" style="margin-top: 1.5rem;">
-            <p style="margin-bottom: 1rem;">For questions, suggestions, or collaborations regarding this work, please contact:</p>
-            <p><strong style="font-size: 1.1rem;">Jakob Domislovic</strong><br>
-            <a href="mailto:jakob.domislovic@fer.unizg.hr" style="color: #F5821F; font-weight: bold; text-decoration: none;">jakob.domislovic@fer.unizg.hr</a></p>
-            <p style="margin-top: 1.5rem; font-size: 0.95rem; color: #666;">Laboratory for Robotics and Intelligent Control Systems (LARICS)<br>
-            University of Zagreb Faculty of Electrical Engineering and Computing<br>
-            Unska 3, 10000 Zagreb, Croatia</p>
+            <p>For questions or collaborations:</p>
+            <p>
+              <strong style="font-size: 1.1rem;">Jakob Domislovic</strong><br>
+              <a href="mailto:jakob.domislovic@fer.unizg.hr" style="color: #F5821F; font-weight: bold; text-decoration: none;">jakob.domislovic@fer.unizg.hr</a>
+            </p>
+            <p style="margin-top: 1rem; font-size: 0.95rem; color: #666;">
+              Laboratory for Robotics and Intelligent Control Systems (LARICS)<br>
+              University of Zagreb Faculty of Electrical Engineering and Computing<br>
+              Unska 3, 10000 Zagreb, Croatia
+            </p>
           </div>
         </div>
       </div>
@@ -373,7 +348,6 @@
       <div class="columns is-centered">
         <div class="column is-8">
           <div class="content has-text-centered">
-            <!-- Footer Logos -->
             <div class="columns is-centered" style="margin-bottom: 1.5rem; gap: 1rem;">
               <div class="column is-narrow" style="display: flex; align-items: center; justify-content: center;">
                 <img src="./logo/FER_logo.png" alt="FER" style="height: 120px; width: auto; opacity: 0.9;"/>
@@ -384,7 +358,7 @@
             </div>
             <p style="margin-bottom: 1rem; color: white;">
               <strong>SPLAT: Soft Peelable Lifting-Lip Adhesion Tool for Aerial Perching</strong><br>
-              © 2026 Jakob Domislovic | University of Zagreb
+              &copy; 2026 Jakob Domislovic | University of Zagreb
             </p>
             <p style="font-size: 0.9rem; opacity: 0.9; color: white;">
               Laboratory for Robotics and Intelligent Control Systems (LARICS)<br>
