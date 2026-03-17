@@ -9,7 +9,7 @@ body {
 }
 
 .title.is-3 {
-  color: var(--lab-color);
+  color: #363636;
   border-bottom: 2px solid var(--lab-color);
   padding-bottom: 0.5rem;
 }
