@@ -59,6 +59,46 @@ section.hero.is-light {
   background-color: #f5f5f5;
 }
 
+.results-legend {
+  margin-top: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+}
+
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.legend-swatch {
+  width: 0.8cm;
+  height: 0.4cm;
+  border-radius: 2px;
+  margin-right: 0.35em;
+  border: 1.5px solid transparent;
+  display: inline-block;
+}
+
+.legend-metal {
+  border-color: #7F7F7F;
+  background-color: rgba(127, 127, 127, 0.35);
+}
+
+.legend-wood {
+  border-color: #C68642;
+  background-color: rgba(198, 134, 66, 0.35);
+}
+
+.legend-plexi {
+  border-color: #5DADE2;
+  background-color: rgba(93, 173, 226, 0.35);
+}
+
 footer {
   padding: 3rem 1.5rem;
 }
